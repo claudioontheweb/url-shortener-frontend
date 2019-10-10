@@ -1,0 +1,62 @@
+.main {
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  height: 30vh;
+  widows: 30vh;
+}
+
+.title {
+  padding: 20px;
+}
+
+input {
+  box-sizing: border-box;
+
+}
+
+input,
+button {
+  width: 20vw;
+}
+
+.response {
+  margin-top: 20px;
+  width: 20vw;
+  font-size: 110%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: zoomanimation 1s forwards;
+}
+
+.error {
+  color: rgb(175, 50, 50);
+}
+
+
+#shortenedUrl {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+@keyframes zoomanimation {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}

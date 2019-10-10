@@ -1,0 +1,30 @@
+<div class="main">
+  <div class="inner">
+    <div class="title">
+      <h1>URL Shortener</h1>
+    </div>
+
+    <input
+      [(ngModel)]="url"
+      type="text"
+      name="url"
+      id="url"
+      (keydown.enter)="shortenUrl()"
+      placeholder="Enter URL"
+    /><button (click)="shortenUrl()">
+      Shorten!
+    </button>
+
+    <div class="response" *ngIf="response.text != ''">
+      <p *ngIf="response.error" class="error">{{ response.text }}</p>
+
+      <div *ngIf="!response.error">
+        <p>{{ copyMessage }}</p>
+
+        <a id="shortenedUrl" (click)="copyUrl(response.text)">{{
+          response.text
+        }}</a>
+      </div>
+    </div>
+  </div>
+</div>
