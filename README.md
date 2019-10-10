@@ -7,4 +7,4 @@
 4. Open up localhost:4200
 
 ## Screenshots
-![img](https://i.ibb.co/DGt6tPG/Bildschirmfoto-2019-10-10-um-09-40-04.jpg | width=200)
+![img](https://i.ibb.co/DGt6tPG/Bildschirmfoto-2019-10-10-um-09-40-04.jpg)
