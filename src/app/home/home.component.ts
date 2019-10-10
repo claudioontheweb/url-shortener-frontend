@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     error: false
   };
 
-  copyMessage = "Click to copy!";
+  copyMessage = "Click to copy to 📋";
 
   constructor(private dataService: DataService) {}
 
@@ -28,9 +28,8 @@ export class HomeComponent implements OnInit {
           this.response.error = false;
         },
         (err: HttpErrorResponse) => {
-          this.response.text = err.error;
+          this.response.text = err.error.replace('"', "");
           this.response.error = true;
-
           setTimeout(() => {
             this.response.text = "";
           }, 3000);
@@ -59,7 +58,7 @@ export class HomeComponent implements OnInit {
 
     setTimeout(() => {
       this.response.text = "";
-      this.copyMessage = "Cick to copy!";
+      this.copyMessage = "Click to copy to 📋";
     }, 3000);
   }
 }

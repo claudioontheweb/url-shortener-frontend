@@ -8,7 +8,7 @@
 
 .inner {
   height: 30vh;
-  widows: 30vh;
+
 }
 
 .title {
@@ -44,6 +44,15 @@ button {
 #shortenedUrl {
   margin-top: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+
+  input,
+  button,
+  .response {
+    width: 100%;
+  }
 }
 
 
